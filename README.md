@@ -292,8 +292,9 @@ If you use this research in your work, please cite:
 ```bibtex
 @misc{discomfort_water_level_2025,
   title={Discomfort Index Effects on River Water Level Prediction: A Comprehensive Analysis},
-  author={Baek, Jae Hyun and Deep Fountain Research Team},
+  author={CICAGO Lab Research Team},
   year={2025},
+  institution={CICAGO Lab, Sogang University},
   url={https://github.com/LeGenAI/discomfort_index_water_level_analysis}
 }
 ```
@@ -308,8 +309,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 **Acknowledgments**
 
-- **Sogang University** Mathematics Department
-- **Deep Fountain Inc.** Research Team
+- **CICAGO Lab** - Sogang University Mathematics Department ([Website](https://cicagolab.sogang.ac.kr/cicagolab/index.html))
+- **Prof. Jon-Lark Kim** - Principal Investigator
+- **Keon-Hwi Kim** - Graduate Researcher
 - **Korean Meteorological Administration** for data provision
 - **Open Source Community** for tools and libraries
 
@@ -317,10 +319,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Contact**
 
-**Jae Hyun Baek** - CTO, Deep Fountain Inc.  
-📧 Email: contact@deep-fountain.com  
-🌐 Website: [deep-fountain.com](https://deep-fountain.com)  
-🔗 LinkedIn: [Connect with us](https://linkedin.com/company/deep-fountain)
+**Jae Hyun Baek** - Graduate Researcher, CICAGO Lab  
+📧 Email: jhbaek@sogang.ac.kr  
+🏛️ Institution: Sogang University Mathematics Department  
+🌐 Lab Website: [CICAGO Lab](https://cicagolab.sogang.ac.kr/cicagolab/index.html)
 
 ---
 
@@ -328,6 +330,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if it helped your research!**
 
-Made with ❤️ by the Deep Fountain Research Team
+Made with ❤️ by the CICAGO Lab Research Team
 
 </div>
