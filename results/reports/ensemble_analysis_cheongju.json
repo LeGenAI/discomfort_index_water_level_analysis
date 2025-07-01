@@ -1,0 +1,307 @@
+{
+  "location": "cheongju",
+  "analysis_type": "hybrid_ensemble_analysis",
+  "total_indices_tested": 13,
+  "individual_performance": {
+    "THI": {
+      "r2": 0.2101580670287142,
+      "rmse": 0.19136803703510027,
+      "mae": 0.10765736124676392
+    },
+    "heat_index": {
+      "r2": 0.20079567391197395,
+      "rmse": 0.1924988865028913,
+      "mae": 0.10942987546353763
+    },
+    "traditional_DI": {
+      "r2": 0.19915796290608878,
+      "rmse": 0.19269601769663552,
+      "mae": 0.1087775809404695
+    },
+    "apparent_temp": {
+      "r2": 0.21872301771795077,
+      "rmse": 0.19032762285540086,
+      "mae": 0.1070433393672844
+    },
+    "temp_humidity_composite": {
+      "r2": 0.2506615972905126,
+      "rmse": 0.186396736283836,
+      "mae": 0.10279490458662566
+    },
+    "THI_change_1h": {
+      "r2": -0.10082478526378558,
+      "rmse": 0.22592193978875286,
+      "mae": 0.14020173997820992
+    },
+    "THI_change_3h": {
+      "r2": -0.17787399297777928,
+      "rmse": 0.2336946257525163,
+      "mae": 0.14416133268457845
+    },
+    "heat_index_change_1h": {
+      "r2": -0.25766204945846094,
+      "rmse": 0.24148006646276493,
+      "mae": 0.14408758441355513
+    },
+    "heat_index_change_3h": {
+      "r2": -0.3099313346649284,
+      "rmse": 0.2464470217326729,
+      "mae": 0.1449194642561134
+    },
+    "traditional_DI_change_1h": {
+      "r2": 0.04102877395080062,
+      "rmse": 0.21086383307895024,
+      "mae": 0.12945134834106312
+    },
+    "traditional_DI_change_3h": {
+      "r2": 0.016582483664507097,
+      "rmse": 0.21353461113114952,
+      "mae": 0.13177544153450524
+    },
+    "apparent_temp_change_1h": {
+      "r2": -0.3225901571934908,
+      "rmse": 0.24763495737982116,
+      "mae": 0.15114674280339088
+    },
+    "apparent_temp_change_3h": {
+      "r2": -0.36243802769351774,
+      "rmse": 0.25133772929733283,
+      "mae": 0.15340016228446424
+    }
+  },
+  "era_based_results": {
+    "Classical (1950s)": {
+      "voting": {
+        "r2": 0.24107127932723493,
+        "rmse": 0.18758573224588057,
+        "mae": 0.10393829624235963,
+        "n_features": 2
+      },
+      "stacking": {
+        "r2": 0.2645672396729142,
+        "rmse": 0.18465913404766807,
+        "mae": 0.10073856808911463,
+        "n_features": 2
+      },
+      "random_forest": {
+        "r2": 0.24105261724169758,
+        "rmse": 0.18758803860177725,
+        "mae": 0.10388798552262461,
+        "n_features": 2
+      }
+    },
+    "Modern (1960s-1980s)": {
+      "voting": {
+        "r2": 0.23793209639294466,
+        "rmse": 0.18797329054543013,
+        "mae": 0.10468249728876626,
+        "n_features": 2
+      },
+      "stacking": {
+        "r2": 0.26141690350844005,
+        "rmse": 0.18505421890071028,
+        "mae": 0.10141838126312346,
+        "n_features": 2
+      },
+      "random_forest": {
+        "r2": 0.23833914815854373,
+        "rmse": 0.187923081712594,
+        "mae": 0.10464097645833409,
+        "n_features": 2
+      }
+    }
+  },
+  "complexity_based_results": {
+    "1": {
+      "r2": 0.24312040136498658,
+      "rmse": 0.18733231854527316,
+      "n_features": 3,
+      "indices": [
+        "THI",
+        "traditional_DI",
+        "temp_humidity_composite"
+      ]
+    }
+  },
+  "top_performer_results": {
+    "top_2": {
+      "best_method": "voting",
+      "best_r2": 0.3210774004375577,
+      "best_rmse": 0.17742280515184172,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.24338439298039416,
+          "rmse": 0.18729964592831758
+        },
+        "linear_blend": {
+          "r2": 0.27837536894651516,
+          "rmse": 0.18291738451949982
+        },
+        "ridge_blend": {
+          "r2": 0.2783750416427503,
+          "rmse": 0.18291742600196814
+        },
+        "voting": {
+          "r2": 0.3210774004375577,
+          "rmse": 0.17742280515184172
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp"
+      ]
+    },
+    "top_3": {
+      "best_method": "voting",
+      "best_r2": 0.32230515948144656,
+      "best_rmse": 0.17726230745697208,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.24346086956343183,
+          "rmse": 0.1872901798277187
+        },
+        "linear_blend": {
+          "r2": 0.2824074810059751,
+          "rmse": 0.18240563886021602
+        },
+        "ridge_blend": {
+          "r2": 0.282407467400957,
+          "rmse": 0.18240564058935332
+        },
+        "voting": {
+          "r2": 0.32230515948144656,
+          "rmse": 0.17726230745697208
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI"
+      ]
+    },
+    "top_5": {
+      "best_method": "voting",
+      "best_r2": 0.32168084893564575,
+      "best_rmse": 0.17734393804182502,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.24365541284419112,
+          "rmse": 0.18726609753822032
+        },
+        "linear_blend": {
+          "r2": 0.2897356223843228,
+          "rmse": 0.18147187461918854
+        },
+        "ridge_blend": {
+          "r2": 0.28973630159667374,
+          "rmse": 0.18147178785011217
+        },
+        "voting": {
+          "r2": 0.32168084893564575,
+          "rmse": 0.17734393804182502
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI",
+        "heat_index",
+        "traditional_DI"
+      ]
+    },
+    "top_7": {
+      "best_method": "voting",
+      "best_r2": 0.33950632597718244,
+      "best_rmse": 0.17499822347811078,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.29587494111478296,
+          "rmse": 0.18068587739459846
+        },
+        "linear_blend": {
+          "r2": 0.28988075699125637,
+          "rmse": 0.18145333279474868
+        },
+        "ridge_blend": {
+          "r2": 0.28988043217594606,
+          "rmse": 0.18145337429398586
+        },
+        "voting": {
+          "r2": 0.33950632597718244,
+          "rmse": 0.17499822347811078
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI",
+        "heat_index",
+        "traditional_DI",
+        "traditional_DI_change_1h",
+        "traditional_DI_change_3h"
+      ]
+    },
+    "top_13": {
+      "best_method": "voting",
+      "best_r2": 0.35217422009412125,
+      "best_rmse": 0.17331191537978125,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.326688148412172,
+          "rmse": 0.1766881559541355
+        },
+        "linear_blend": {
+          "r2": 0.29518024545958055,
+          "rmse": 0.18077498851731366
+        },
+        "ridge_blend": {
+          "r2": 0.29518128032445323,
+          "rmse": 0.18077485580412497
+        },
+        "voting": {
+          "r2": 0.35217422009412125,
+          "rmse": 0.17331191537978125
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI",
+        "heat_index",
+        "traditional_DI",
+        "traditional_DI_change_1h",
+        "traditional_DI_change_3h",
+        "THI_change_1h",
+        "THI_change_3h",
+        "heat_index_change_1h",
+        "heat_index_change_3h",
+        "apparent_temp_change_1h",
+        "apparent_temp_change_3h"
+      ]
+    }
+  },
+  "optimal_weights": {
+    "indices": [
+      "temp_humidity_composite",
+      "apparent_temp",
+      "THI",
+      "heat_index",
+      "traditional_DI"
+    ],
+    "weights": "[0.         0.25585945 0.24779206 0.24944634 0.24690215]",
+    "r2": 0.23160905372113127,
+    "rmse": 0.18875150720142103,
+    "improvement": -0.017088071315937592
+  },
+  "best_overall_ensemble": {
+    "type": "top_performer",
+    "name": "top_13_voting",
+    "r2": 0.35217422009412125,
+    "rmse": 0.17331191537978125
+  },
+  "summary": {
+    "best_individual_r2": 0.2506615972905126,
+    "best_ensemble_r2": 0.35217422009412125,
+    "ensemble_improvement": 0.10151262280360862
+  }
+}

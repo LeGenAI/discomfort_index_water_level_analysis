@@ -1,0 +1,325 @@
+{
+  "location": "gadeok",
+  "timestamp": "2025-07-01T00:01:14.620250",
+  "correlations": {
+    "effective_temperature": {
+      "correlation": 0.4755211158309236,
+      "development_year": 1923,
+      "complexity_score": 1,
+      "era": "Early (1920s)",
+      "name": "Effective Temperature"
+    },
+    "THI": {
+      "correlation": 0.4321356817365665,
+      "development_year": 1950,
+      "complexity_score": 1,
+      "era": "Classical (1950s)",
+      "name": "Temperature-Humidity Index"
+    },
+    "traditional_DI": {
+      "correlation": 0.4716189310736742,
+      "development_year": 1950,
+      "complexity_score": 1,
+      "era": "Classical (1950s)",
+      "name": "Traditional Discomfort Index"
+    },
+    "WBGT_simple": {
+      "correlation": 0.45412622529310265,
+      "development_year": 1956,
+      "complexity_score": 2,
+      "era": "Classical (1950s)",
+      "name": "Wet Bulb Globe Temperature (Simplified)"
+    },
+    "humidex": {
+      "correlation": 0.46054850937044356,
+      "development_year": 1965,
+      "complexity_score": 2,
+      "era": "Modern (1960s-1980s)",
+      "name": "Humidity Index (Canadian)"
+    },
+    "heat_index": {
+      "correlation": 0.42100473369086827,
+      "development_year": 1979,
+      "complexity_score": 4,
+      "era": "Modern (1960s-1980s)",
+      "name": "Heat Index (Apparent Temperature)"
+    },
+    "apparent_temp": {
+      "correlation": 0.4440349733481188,
+      "development_year": 1984,
+      "complexity_score": 3,
+      "era": "Modern (1960s-1980s)",
+      "name": "Apparent Temperature (Australian)"
+    },
+    "feels_like_temp": {
+      "correlation": 0.40918734634759973,
+      "development_year": 1990,
+      "complexity_score": 3,
+      "era": "Contemporary (1990s-2010s)",
+      "name": "Feels Like Temperature"
+    },
+    "UTCI_simplified": {
+      "correlation": 0.41930251562543636,
+      "development_year": 2012,
+      "complexity_score": 5,
+      "era": "Contemporary (1990s-2010s)",
+      "name": "Universal Thermal Climate Index (Simplified)"
+    },
+    "temp_humidity_composite": {
+      "correlation": 0.46400066582421917,
+      "development_year": 2024,
+      "complexity_score": 1,
+      "era": "Latest (2020s)",
+      "name": "Temperature-Humidity Composite"
+    }
+  },
+  "complexity_analysis": {
+    "1": [
+      {
+        "name": "effective_temperature",
+        "correlation": 0.4755211158309236,
+        "era": "Early (1920s)"
+      },
+      {
+        "name": "THI",
+        "correlation": 0.4321356817365665,
+        "era": "Classical (1950s)"
+      },
+      {
+        "name": "traditional_DI",
+        "correlation": 0.4716189310736742,
+        "era": "Classical (1950s)"
+      },
+      {
+        "name": "temp_humidity_composite",
+        "correlation": 0.46400066582421917,
+        "era": "Latest (2020s)"
+      }
+    ],
+    "2": [
+      {
+        "name": "WBGT_simple",
+        "correlation": 0.45412622529310265,
+        "era": "Classical (1950s)"
+      },
+      {
+        "name": "humidex",
+        "correlation": 0.46054850937044356,
+        "era": "Modern (1960s-1980s)"
+      }
+    ],
+    "4": [
+      {
+        "name": "heat_index",
+        "correlation": 0.42100473369086827,
+        "era": "Modern (1960s-1980s)"
+      }
+    ],
+    "3": [
+      {
+        "name": "apparent_temp",
+        "correlation": 0.4440349733481188,
+        "era": "Modern (1960s-1980s)"
+      },
+      {
+        "name": "feels_like_temp",
+        "correlation": 0.40918734634759973,
+        "era": "Contemporary (1990s-2010s)"
+      }
+    ],
+    "5": [
+      {
+        "name": "UTCI_simplified",
+        "correlation": 0.41930251562543636,
+        "era": "Contemporary (1990s-2010s)"
+      }
+    ]
+  },
+  "era_analysis": {
+    "Early (1920s)": [
+      {
+        "name": "effective_temperature",
+        "correlation": 0.4755211158309236,
+        "year": 1923
+      }
+    ],
+    "Classical (1950s)": [
+      {
+        "name": "THI",
+        "correlation": 0.4321356817365665,
+        "year": 1950
+      },
+      {
+        "name": "traditional_DI",
+        "correlation": 0.4716189310736742,
+        "year": 1950
+      },
+      {
+        "name": "WBGT_simple",
+        "correlation": 0.45412622529310265,
+        "year": 1956
+      }
+    ],
+    "Modern (1960s-1980s)": [
+      {
+        "name": "humidex",
+        "correlation": 0.46054850937044356,
+        "year": 1965
+      },
+      {
+        "name": "heat_index",
+        "correlation": 0.42100473369086827,
+        "year": 1979
+      },
+      {
+        "name": "apparent_temp",
+        "correlation": 0.4440349733481188,
+        "year": 1984
+      }
+    ],
+    "Contemporary (1990s-2010s)": [
+      {
+        "name": "feels_like_temp",
+        "correlation": 0.40918734634759973,
+        "year": 1990
+      },
+      {
+        "name": "UTCI_simplified",
+        "correlation": 0.41930251562543636,
+        "year": 2012
+      }
+    ],
+    "Latest (2020s)": [
+      {
+        "name": "temp_humidity_composite",
+        "correlation": 0.46400066582421917,
+        "year": 2024
+      }
+    ]
+  },
+  "metadata": {
+    "effective_temperature": {
+      "name": "Effective Temperature",
+      "development_year": 1923,
+      "complexity": "Simple",
+      "formula_complexity_score": 1,
+      "primary_use": "Early comfort assessment",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Early (1920s)"
+    },
+    "THI": {
+      "name": "Temperature-Humidity Index",
+      "development_year": 1950,
+      "complexity": "Simple",
+      "formula_complexity_score": 1,
+      "primary_use": "General comfort assessment",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Classical (1950s)"
+    },
+    "traditional_DI": {
+      "name": "Traditional Discomfort Index",
+      "development_year": 1950,
+      "complexity": "Simple",
+      "formula_complexity_score": 1,
+      "primary_use": "Basic thermal comfort",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Classical (1950s)"
+    },
+    "WBGT_simple": {
+      "name": "Wet Bulb Globe Temperature (Simplified)",
+      "development_year": 1956,
+      "complexity": "Moderate",
+      "formula_complexity_score": 2,
+      "primary_use": "Military and sports safety",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Classical (1950s)"
+    },
+    "humidex": {
+      "name": "Humidity Index (Canadian)",
+      "development_year": 1965,
+      "complexity": "Moderate",
+      "formula_complexity_score": 2,
+      "primary_use": "Canadian weather forecasting",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Modern (1960s-1980s)"
+    },
+    "heat_index": {
+      "name": "Heat Index (Apparent Temperature)",
+      "development_year": 1979,
+      "complexity": "Complex",
+      "formula_complexity_score": 4,
+      "primary_use": "US weather forecasting",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Modern (1960s-1980s)"
+    },
+    "apparent_temp": {
+      "name": "Apparent Temperature (Australian)",
+      "development_year": 1984,
+      "complexity": "Moderate",
+      "formula_complexity_score": 3,
+      "primary_use": "Australian weather services",
+      "variables_used": [
+        "temperature",
+        "humidity",
+        "wind_speed"
+      ],
+      "era": "Modern (1960s-1980s)"
+    },
+    "feels_like_temp": {
+      "name": "Feels Like Temperature",
+      "development_year": 1990,
+      "complexity": "Moderate",
+      "formula_complexity_score": 3,
+      "primary_use": "Modern weather apps",
+      "variables_used": [
+        "temperature",
+        "humidity",
+        "wind_speed"
+      ],
+      "era": "Contemporary (1990s-2010s)"
+    },
+    "UTCI_simplified": {
+      "name": "Universal Thermal Climate Index (Simplified)",
+      "development_year": 2012,
+      "complexity": "Very Complex",
+      "formula_complexity_score": 5,
+      "primary_use": "International climate assessment",
+      "variables_used": [
+        "temperature",
+        "humidity",
+        "wind_speed"
+      ],
+      "era": "Contemporary (1990s-2010s)"
+    },
+    "temp_humidity_composite": {
+      "name": "Temperature-Humidity Composite",
+      "development_year": 2024,
+      "complexity": "Simple",
+      "formula_complexity_score": 1,
+      "primary_use": "Water level prediction research",
+      "variables_used": [
+        "temperature",
+        "humidity"
+      ],
+      "era": "Latest (2020s)"
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "location": "gadeok",
+  "analysis_type": "hybrid_ensemble_analysis",
+  "total_indices_tested": 13,
+  "individual_performance": {
+    "THI": {
+      "r2": 0.05783792488093642,
+      "rmse": 0.25888519435899954,
+      "mae": 0.1297645684642462
+    },
+    "heat_index": {
+      "r2": 0.05755336758455831,
+      "rmse": 0.2589242864172447,
+      "mae": 0.13182311185941842
+    },
+    "traditional_DI": {
+      "r2": 0.04346936436539395,
+      "rmse": 0.2608518052303448,
+      "mae": 0.13059224969812544
+    },
+    "apparent_temp": {
+      "r2": 0.06155012084073841,
+      "rmse": 0.258374676527571,
+      "mae": 0.12814534555505191
+    },
+    "temp_humidity_composite": {
+      "r2": 0.13965902848963452,
+      "rmse": 0.24738861392712747,
+      "mae": 0.12097976685855313
+    },
+    "THI_change_1h": {
+      "r2": -0.24424870117090802,
+      "rmse": 0.29750755758804104,
+      "mae": 0.16748279100598346
+    },
+    "THI_change_3h": {
+      "r2": -0.33857043927616215,
+      "rmse": 0.30857804235103453,
+      "mae": 0.16940838007362852
+    },
+    "heat_index_change_1h": {
+      "r2": -0.36713959001852614,
+      "rmse": 0.3118536521693941,
+      "mae": 0.16746789252009042
+    },
+    "heat_index_change_3h": {
+      "r2": -0.32420743688016174,
+      "rmse": 0.3069180398239578,
+      "mae": 0.1642349625133467
+    },
+    "traditional_DI_change_1h": {
+      "r2": -0.015228874365192047,
+      "rmse": 0.26873633198132485,
+      "mae": 0.1508994502935629
+    },
+    "traditional_DI_change_3h": {
+      "r2": -0.09883469781997545,
+      "rmse": 0.27958288812181314,
+      "mae": 0.16022056282594896
+    },
+    "apparent_temp_change_1h": {
+      "r2": -0.370102006503199,
+      "rmse": 0.3121913428072946,
+      "mae": 0.17373263032646127
+    },
+    "apparent_temp_change_3h": {
+      "r2": -0.3605023182253082,
+      "rmse": 0.31109572818039477,
+      "mae": 0.17353304343733528
+    }
+  },
+  "era_based_results": {
+    "Classical (1950s)": {
+      "voting": {
+        "r2": 0.17160817517358629,
+        "rmse": 0.2427517149458154,
+        "mae": 0.11490515446673567,
+        "n_features": 2
+      },
+      "stacking": {
+        "r2": 0.22782191364391047,
+        "rmse": 0.23437060487110162,
+        "mae": 0.11451064322169506,
+        "n_features": 2
+      },
+      "random_forest": {
+        "r2": 0.1679693327935442,
+        "rmse": 0.24328429341831134,
+        "mae": 0.11504882025749773,
+        "n_features": 2
+      }
+    },
+    "Modern (1960s-1980s)": {
+      "voting": {
+        "r2": 0.1690562472889523,
+        "rmse": 0.2431253355514424,
+        "mae": 0.11585390724211175,
+        "n_features": 2
+      },
+      "stacking": {
+        "r2": 0.2258469532630596,
+        "rmse": 0.23467013232382664,
+        "mae": 0.11539749401428313,
+        "n_features": 2
+      },
+      "random_forest": {
+        "r2": 0.1684226722399963,
+        "rmse": 0.24321800656223327,
+        "mae": 0.11594649163104827,
+        "n_features": 2
+      }
+    }
+  },
+  "complexity_based_results": {
+    "1": {
+      "r2": 0.17519306854580852,
+      "rmse": 0.2422258873557039,
+      "n_features": 3,
+      "indices": [
+        "THI",
+        "traditional_DI",
+        "temp_humidity_composite"
+      ]
+    }
+  },
+  "top_performer_results": {
+    "top_2": {
+      "best_method": "voting",
+      "best_r2": 0.30569679622508505,
+      "best_rmse": 0.222238342417998,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.17168242750754603,
+          "rmse": 0.2427408352601417
+        },
+        "linear_blend": {
+          "r2": 0.26604089308594425,
+          "rmse": 0.2284969125871679
+        },
+        "ridge_blend": {
+          "r2": 0.2660373706078484,
+          "rmse": 0.22849746089728237
+        },
+        "voting": {
+          "r2": 0.30569679622508505,
+          "rmse": 0.222238342417998
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp"
+      ]
+    },
+    "top_3": {
+      "best_method": "voting",
+      "best_r2": 0.3043041535118166,
+      "best_rmse": 0.2224611150934171,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.1718731681676483,
+          "rmse": 0.24271288510282393
+        },
+        "linear_blend": {
+          "r2": 0.2694361071733876,
+          "rmse": 0.2279677991821676
+        },
+        "ridge_blend": {
+          "r2": 0.2694355448226342,
+          "rmse": 0.22796788692113212
+        },
+        "voting": {
+          "r2": 0.3043041535118166,
+          "rmse": 0.2224611150934171
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI"
+      ]
+    },
+    "top_5": {
+      "best_method": "voting",
+      "best_r2": 0.30815999444398423,
+      "best_rmse": 0.22184377166634664,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.17259322355668627,
+          "rmse": 0.24260734285942478
+        },
+        "linear_blend": {
+          "r2": 0.28113815915365825,
+          "rmse": 0.22613465348216677
+        },
+        "ridge_blend": {
+          "r2": 0.2812150581678914,
+          "rmse": 0.22612255797505584
+        },
+        "voting": {
+          "r2": 0.30815999444398423,
+          "rmse": 0.22184377166634664
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI",
+        "heat_index",
+        "traditional_DI"
+      ]
+    },
+    "top_7": {
+      "best_method": "voting",
+      "best_r2": 0.34245688117862105,
+      "best_rmse": 0.21627510083746065,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.2908074465147319,
+          "rmse": 0.2246086553999878
+        },
+        "linear_blend": {
+          "r2": 0.28129190469880283,
+          "rmse": 0.226110470076716
+        },
+        "ridge_blend": {
+          "r2": 0.28136298699872053,
+          "rmse": 0.22609928831197992
+        },
+        "voting": {
+          "r2": 0.34245688117862105,
+          "rmse": 0.21627510083746065
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI",
+        "heat_index",
+        "traditional_DI",
+        "traditional_DI_change_1h",
+        "traditional_DI_change_3h"
+      ]
+    },
+    "top_13": {
+      "best_method": "voting",
+      "best_r2": 0.3515426117469409,
+      "best_rmse": 0.2147756914852181,
+      "all_methods": {
+        "random_forest": {
+          "r2": 0.3252840090744903,
+          "rmse": 0.21908109661674458
+        },
+        "linear_blend": {
+          "r2": 0.2863395768690331,
+          "rmse": 0.22531505496363383
+        },
+        "ridge_blend": {
+          "r2": 0.2864886983891757,
+          "rmse": 0.2252915136001423
+        },
+        "voting": {
+          "r2": 0.3515426117469409,
+          "rmse": 0.2147756914852181
+        }
+      },
+      "indices": [
+        "temp_humidity_composite",
+        "apparent_temp",
+        "THI",
+        "heat_index",
+        "traditional_DI",
+        "traditional_DI_change_1h",
+        "traditional_DI_change_3h",
+        "THI_change_1h",
+        "heat_index_change_3h",
+        "THI_change_3h",
+        "apparent_temp_change_3h",
+        "heat_index_change_1h",
+        "apparent_temp_change_1h"
+      ]
+    }
+  },
+  "optimal_weights": {
+    "indices": [
+      "temp_humidity_composite",
+      "apparent_temp",
+      "THI",
+      "heat_index",
+      "traditional_DI"
+    ],
+    "weights": "[1.73472348e-18 2.46350841e-01 2.40482200e-01 2.60257643e-01\n 2.52909316e-01]",
+    "r2": 0.13400256389990495,
+    "rmse": 0.24820053178906495,
+    "improvement": -0.024798197402601807
+  },
+  "best_overall_ensemble": {
+    "type": "top_performer",
+    "name": "top_13_voting",
+    "r2": 0.3515426117469409,
+    "rmse": 0.2147756914852181
+  },
+  "summary": {
+    "best_individual_r2": 0.13965902848963452,
+    "best_ensemble_r2": 0.3515426117469409,
+    "ensemble_improvement": 0.21188358325730638
+  }
+}
